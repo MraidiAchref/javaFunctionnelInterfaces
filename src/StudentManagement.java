@@ -9,7 +9,9 @@ import java.util.stream.Stream;
 public class StudentManagement implements Management{
     @Override
     public void displayEtudiants(List<Etudiant> Etudiants, Consumer<Etudiant> con) {
-
+        for (Etudiant etudiant : Etudiants) {
+            consumer.accept(etudiant) ;
+        }
     }
 
     @Override
